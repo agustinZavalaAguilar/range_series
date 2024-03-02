@@ -12,8 +12,8 @@
         <h1>Générateur d'étiquettes</h1>
         <nav>
         <a href="../index.html">Accueil</a>
-        <a href="/html/manual_entry.html">Saisie</a>
-        <a href="#/upload">Téléversement</a>
+        <a href="manual_entry.html">Saisie</a>
+        <a href="upload.html">Téléversement</a>
         </nav>
     </header>
 
@@ -23,9 +23,28 @@
       </div>
 
       <div>
-        <h3></h3>
+        <h3>Définissez vos règles d'étiquetage, téléversez un fichier JSON avec vos numéros 
+          et récupérez-le avec toutes les étiquettes correspondantes. 
+          Notre outil automatise l'étiquetage pour vous faire gagner du temps.</h3>
       </div>
-      <div class="buttons_container">
+      <div>
+
+         <!-- Process JSON File Section -->
+         <label>
+            <input type="file" id="bulkRulesFileInput" accept=".json">
+        </label>
+        <button onclick="addBulkRules()">1- Ajouter ranges</button>
+
+        <label>
+          <input type="file" id="numbersFileInput" accept=".json">
+        </label>
+        <button onclick="addBulkNumbers()">2- Ajouter numéros</button>   
+        
+      
+        <button onclick="getMatchingLabelsFile()">3- Obtenir etiquettes!</button>
+
+        <!-- Result Section -->
+        <div id="result"></div>
 
       </div>
 

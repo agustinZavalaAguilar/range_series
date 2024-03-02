@@ -7,14 +7,11 @@ const labelRanges = [
     {label: 'E', lowerBound: 8, upperBound: 10}
 ];
 
+
+
 function getMatchingLabels(){
     const numberInput = document.getElementById('numberInput').value;
-    let resultContainer = document.getElementById('result');
-    console.log(numberInput);
-
-
-//erase previous results
-resultContainer.innerHTML = "";
+    const resultContainer = document.getElementById('result');
 
 //converting  the input to a number
 let inputNumber = parseInt(numberInput);
