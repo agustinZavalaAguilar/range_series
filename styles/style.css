@@ -22,12 +22,16 @@ h2{
     color: rgb(41, 51, 66);
 }
 
-h3{
+h3, label{
     font-size: 1rem;
     font-weight: 100;
     text-align: justify;
     padding: .5rem;
     color: rgb(82, 79, 79);
+}
+
+input{
+    padding: .5rem;
 }
 
 nav  {
@@ -70,3 +74,4 @@ button {
 section {
     padding: 1rem;
 }
+

@@ -29,27 +29,27 @@
       </div>
       <div>
 
-         <!-- Process JSON File Section -->
-         <label>
-            <input type="file" id="bulkRulesFileInput" accept=".json">
-        </label>
-        <button onclick="addBulkRules()">1- Ajouter ranges</button>
+         <!-- Insertion de la régle de création d'étiquettes -->      
+        <label>
+          Regle :
+          <input type="text" id="ruleInput" placeholder="Entrez une règle pour créer vos étiquettes">
+        </label><br>
 
         <label>
-          <input type="file" id="numbersFileInput" accept=".json">
+          Envoi de numéros à traiter: fichier JSON
+          <input type="file" id="jsonInput" accept=".json">
         </label>
-        <button onclick="addBulkNumbers()">2- Ajouter numéros</button>   
-        
-      
-        <button onclick="getMatchingLabelsFile()">3- Obtenir etiquettes!</button>
+  
+        <button onclick="submitRuleAndJSON()">Submit Rule and JSON</button>
 
-        <!-- Result Section -->
-        <div id="result"></div>
+        <h2>Processed Results</h2>
+
+        <button onclick="downloadResults()">Download Results</button>
+
 
       </div>
 
     </section>
-
-    <div id="content"></div>
+    <script src="../scripts/uploadScript.js"></script>
   </body>
 </html>
